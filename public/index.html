@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="john-doe-band" />
+  <meta name="description" content="john-doe-band" />
+  <meta property="og:description" content="john-doe-band" />
+  <link rel="icon" href="assets/images/covers/hairy.jpg" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/covers/hairy.jpg" type="image/png" />
+  <title>john doe band</title>
+  <style>
+    body {
+        background-color: #c0c0c0;
+        background-image: 
+            linear-gradient(45deg, #aaa 25%, transparent 25%),
+            linear-gradient(-45deg, #aaa 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #aaa 75%),
+            linear-gradient(-45deg, transparent 75%, #aaa 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        font-family: sans-serif;
+        line-height: 1.6;
+        }
+
+    .page-content {
+    background-color: #fff;
+    background-image: radial-gradient(#0000000c 1px, transparent 1px);
+    background-size: 4px 4px;
+    width: 70%;
+    margin: 40px auto;
+    border: 15px solid #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 0 0 1px #999;
+    }
+
+    /* On screens wider than 1024px (laptops/desktops) */
+    @media (min-width: 1024px) {
+    .page-content {
+        width: 40%;
+    }
+    }
+
+
+
+    .media-block {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2em;
+      gap: 20px;
+    }
+
+    .media-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .media-block img {
+      border: 1px solid black;
+      flex-shrink: 0;
+    }
+
+    .media-block p {
+      flex: 1;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-content">
+    
+    <div class="media-block reverse">
+      <img src="assets/images/brave-cutout.png" alt="blanchards" width="200" height="200">
+      <p>
+        John Doe is an American band based in Richmond, VA. Formed in late 2024 with members Cameron McNamara (guitar), Henry Bryant (bass vi), and Eli Conger (drums).
+      </p>
+    </div>
+
+    <div class="media-block">
+      <img src="assets/images/camera.png" alt="blanchards" width="175" height="175">
+      <p>
+        Check out our upcoming shows or <a href="https://www.instagram.com/1johndoeband/">contact us</a>!<br>
+        <s>March 18th at Mocha Gourmet Mart</s><br>
+        <s>March 29th at Big Yeller</s><br>
+        June 15 at The Camel
+      </p>
+    </div>
+
+    <div class="media-block reverse">
+      <img src="assets/images/ginger-cutout.png" alt="oolong tea" width="170" height="200">
+      <p>
+        Electronic lyric sheets and other merchandise
+      </p>
+    </div>
+
+    <div class="media-block">
+      <img src="assets/images/mic-cutout.png" alt="guis" width="200" height="200">
+      <p>
+        Listen to some of our music here
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
