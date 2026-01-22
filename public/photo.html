@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos</title>
+  <style>
+    body {
+      background-color: #c0c0c0;
+      background-image:
+        linear-gradient(45deg, #aaa 25%, transparent 25%),
+        linear-gradient(-45deg, #aaa 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #aaa 75%),
+        linear-gradient(-45deg, transparent 75%, #aaa 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .home-link {
+      display: inline-block;
+      text-align: center;
+      font-size: 2rem;
+      text-decoration: none;
+      background-color: white;
+      padding: 10px 15px;
+      margin: 10px auto 10px;
+      border: 1px solid #ccc;
+      
+      
+    }
+
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+
+    .page-content {
+      background-color: #fff;
+      background-image: radial-gradient(#0000000c 1px, transparent 1px);
+      background-size: 4px 4px;
+      width: 95%;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      border: 8px solid #f1f1f1;
+      padding: 20px;
+      box-shadow: 0 0 0 1px #999;
+      box-sizing: border-box;
+    }
+
+    .photo-block {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 2em;
+    }
+
+    .photo-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .photo-block img {
+      width: 200px;
+      height: auto;
+      border: 1px solid #333;
+    }
+
+    .photo-block p {
+      flex: 1;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .photo-block, .photo-block.reverse {
+        flex-direction: column !important;
+        text-align: center;
+      }
+
+      .photo-block img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div style="text-align: center;">
+    <a class="home-link" href="index.html" title="Go to Home">🏠</a>
+  </div>
+
+  <div class="page-content">
+
+    <div class="photo-block">
+      <img src="assets/images/photo-page/amar-lounge.JPG" alt="Amar Lounge">
+      <p>
+        A photo from Amar Lounge — a cozy atmosphere and ambient lighting made it a memorable set.
+      </p>
+    </div>
+
+    <div class="photo-block reverse">
+      <img src="assets/images/photo-page/amar-lounge.JPG" alt="Performance Night">
+      <p>
+        Playing to a packed crowd. This shot captures the lighting and motion of the night just right.
+      </p>
+    </div>
+
+    <div class="photo-block">
+      <img src="assets/images/photo-page/amar-lounge.JPG" alt="Crowd shot">
+      <p>
+        An over-the-shoulder view of the audience. You could feel the energy from this side of the stage.
+      </p>
+    </div>
+
+    <div class="photo-block reverse">
+      <img src="assets/images/photo-page/amar-lounge.JPG" alt="Soundcheck">
+      <p>
+        Early evening soundcheck with sunlight still pouring in. One of the rare quiet moments.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>

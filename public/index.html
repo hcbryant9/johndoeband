@@ -1,106 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="john-doe-band" />
-  <meta name="description" content="john-doe-band" />
-  <meta property="og:description" content="john-doe-band" />
-  <link rel="icon" href="assets/images/covers/hairy.jpg" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/images/covers/hairy.jpg" type="image/png" />
-  <title>john doe band</title>
-  <style>
-    body {
-        background-color:#c0c0c0;
-        background-image: 
-            linear-gradient(45deg, #aaa 25%, transparent 25%),
-            linear-gradient(-45deg, #aaa 25%, transparent 25%),
-            linear-gradient(45deg, transparent 75%, #aaa 75%),
-            linear-gradient(-45deg, transparent 75%, #aaa 75%);
-        background-size: 20px 20px;
-        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-        font-family: sans-serif;
-        line-height: 1.6;
-        }
+    <meta charset="UTF-8">
+    <title>2024</title>
+    <meta property="og:title" content="ABOUTME" />
 
-    .page-content {
-    background-color: #fff;
-    background-image: radial-gradient(#0000000c 1px, transparent 1px);
-    background-size: 4px 4px;
-    width: 70%;
-    margin: 40px auto;
-    border: 15px solid #f1f1f1;
-    padding: 20px;
-    box-shadow: 0 0 0 1px #999;
-    }
+    <meta name="description" content="about-me" />
+    <meta property="og:description" content="about-me" />
 
-    /* On screens wider than 1024px (laptops/desktops) */
-    @media (min-width: 1024px) {
-    .page-content {
-        width: 40%;
-    }
-    }
-
-
-
-    .media-block {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2em;
-      gap: 20px;
-    }
-
-    .media-block.reverse {
-      flex-direction: row-reverse;
-    }
-
-    .media-block img {
-      border: 1px solid black;
-      flex-shrink: 0;
-    }
-
-    .media-block p {
-      flex: 1;
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <div class="page-content">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/about/battery.jpg" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/about/battery.jpg" type="image/png" />
+   
+    <title>ABOUTME</title>
     
-    <div class="media-block reverse">
-      <img src="assets/images/brave-cutout.png" alt="blanchards" width="200" height="200">
-      <p>
-        John Doe is an American band based in Richmond, VA. Formed in late 2024 with members Cameron McNamara (guitar), Henry Bryant (bass vi), and Eli Conger (drums).
-      </p>
-    </div>
+    <style>
+body {
+  background-image: url("assets/images/photo-page/black.JPG");
+  background-size: 1000px 1000px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+}
 
-    <div class="media-block">
-      <img src="assets/images/camera.png" alt="blanchards" width="175" height="175">
-      <p>
-        Check out our upcoming shows or <a href="https://www.instagram.com/1johndoeband/">contact us</a>!<br>
-        <s>March 18th at Mocha Gourmet Mart</s><br>
-        <s>March 29th at Big Yeller</s><br>
-        May 23 at Amar Lounge<br>
-        June 15 at The Camel
-      </p>
-    </div>
+.page-content {
+  background-image: url("assets/images/photo-page/blue.JPG");
+  background-size: 500px 500px;
+  width: 95%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-    <div class="media-block reverse">
-      <img src="assets/images/ginger-cutout.png" alt="oolong tea" width="170" height="200">
-      <p>
-        Electronic lyric sheets and other merchandise (coming soon)
-      </p>
-    </div>
+/* ---------- Images ---------- */
 
-    <div class="media-block">
-      <img src="assets/images/mic-cutout.png" alt="guis" width="200" height="200">
-      <p>
-        Listen to some of our music here (coming soon)<br>
-      </p>
-    </div>
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  </div>
+.hand-image {
+  cursor: pointer;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  
+  border-collapse: collapse;
+  
+}
+
+table td {
+  border: 1px solid #000000;
+  padding: 6px;
+  
+  
+}
+
+/* ---------- Flex container (unused but preserved) ---------- */
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* ---------- Mobile / iPhone ---------- */
+
+@media (max-width: 768px) {
+
+  body {
+    background-size: 600px 600px;
+  }
+
+  .page-content {
+    width: 95%;
+    padding: 8px;
+    background-size: 300px 300px;
+  }
+
+  #gifphoto {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /* Stack tables vertically on mobile */
+  table {
+    border-collapse: collapse;
+  }
+
+  
+
+  table td {
+
+    
+    border: 1px solid #000000;
+    padding: 4px 0;
+  }
+
+  table td img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+    </style>
+    
+    
+    
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ6JMSNG3C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-QQ6JMSNG3C');
+</script>
+<body>
+    <div class="page-content">
+    
+    
+ 
+    <br>
+        <center>
+    <img id = "gifphoto" src = "assets/images/johndoegif.gif">
+    <br> 
+    <div class="caption-text">John Doe</div>
+    <div class="caption-caption-text">An American Rock Band in Richmond, VA.</div>
+    <br>
+    
+    <table>
+        
+        <tr>
+            <td><img id = "linkphoto" src = "assets/images/brave-cutout.png" alt ="coin" width="175px" height="175px"></td>
+            <td><a href="https://johndoe3.bandcamp.com/">Bandcamp</a></td>
+            <td><img id = "linkphoto" src = "assets/images/ginger-cutout.png" alt ="battery"  width="175px" height="175px" ></td>
+            <td><a href="https://www.instagram.com/1johndoeband/">Instagram</a></td>
+        </tr>
+    </table> <br>
+    <i>Upcoming Shows</i>
+    <br>
+    <table>
+        <tr>
+            <td>
+                02/27/26
+            </td>
+            <td>Material Room</td>
+            
+        </tr>
+        <tr>
+            <td>03/01/26</td>
+            <td>Green House Gallery</td>
+         
+        </tr>
+        
+    
+    </table>
+    <br>
+    <i>Previous Shows</i>
+    <table>
+        <tr>
+            <td>01/14/26</td>
+            <td>The Camel</td>
+            <!-- <td>Cause and Control, Bullseye, Squish</td> -->
+        </tr>
+        <tr>
+            <td>06/27/25</td>
+            <td>Sefton Listening Room</td>
+            <!-- <td>David Shultz</td> -->
+        </tr>
+        <tr>
+            <td>06/15/25</td>
+            <td>The Camel</td>
+            <!-- <td>Solera, Telehealth, Pregnancy Scare</td> -->
+        </tr>
+        <tr>
+            <td>05/24/25</td>
+            <td>Big Yeller</td>
+            <!-- <td>deer_watching, Lichtenvol, Schedds</td> -->
+        </tr>
+        <tr>
+            <td>05/23/25</td>
+            <td>Amar Lounge</td>
+            <!-- <td>Hypochondriac, Lichtenvol</td> -->
+        </tr>
+        <tr>
+            <td>04/29/25</td>
+            <td>Big Yeller</td>
+            <!-- <td>Schedds, deer_watching, Solera</td> -->
+        </tr>
+        <tr>
+            <td>
+                04/18/25
+            </td>
+            <td>Mocha Mart</td>
+            <!-- <td>Lichtenvol</td> -->
+        </tr>
+
+    </table>
+</center>
+    <br><br><br>
+    </div>  
 </body>
 </html>
